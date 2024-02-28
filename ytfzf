@@ -2098,7 +2098,7 @@ scrape_T() { scrape_invidious_trending "$@"; }
 
 scrape_invidious_channel() {
 	channel_url=$1
-	[ "$channel_url" = ":help" ] && print_info "The search should be a link to a youtube channel${new_line}You can put one or more of the following modifiers followed by a space before the url to specify which type of videos to scrape:${new_line}:videos${new_line}:streams${new_line}:playlists${new_line}:v, :s, and :p may also be used as a shorter version${new_line}You may also use --type=live, --type=video, --type=playlist, or --type=all" && return 100
+	[ "$channel_url" = ":help" ] && print_info "The search should be a link to a youtube channel${new_line}You can put one or more of the following modifiers followed by a space before the url to specify which type of videos to scrape:${new_line}:videos${new_line}:streams${new_line}:playlists${new_line}${new_line}:v, :s, and :p may also be used as a shorter version${new_line}You may also use --type=live, --type=video, --type=playlist, or --type=all" && return 100
 	output_json_file=$2
 
 	tmp_file_name="channel-${channel_id}"
