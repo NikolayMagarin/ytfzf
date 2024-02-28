@@ -6,8 +6,8 @@ display_text_gui () {
     MAIN_DIALOG="
 <window>
     <edit>
-	<width>600</width>
-	<height>600</height>
+	<width>700</width>
+	<height>700</height>
 	<default>$*</default>
     </edit>
 </window>" gtkdialog
