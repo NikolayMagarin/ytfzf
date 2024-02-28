@@ -2381,7 +2381,7 @@ scrape_p() { scrape_json_file "$@"; }
 # Comments{{{
 scrape_comments() {
 	video_id="$1"
-	[ "$video_id" = ":help" ] && print_info "Search should be a link to a youtube video" && return 100
+	[ "$video_id" = ":help" ] && print_info "Search should be a link to the youtube video" && return 100
 	case "$video_id" in
 	*/*) video_id="${video_id##*=}" ;;
 	esac
