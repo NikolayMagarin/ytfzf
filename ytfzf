@@ -118,7 +118,7 @@ print_help___ytfzf__() {
     GENERAL OPTIONS:
         -h                      Show this help text
 
-        --version                Get the current version
+        --version                Get the current version of ytfzf
 
         --version-all            Get the current version of ytfzf,
                                     and required dependencies
